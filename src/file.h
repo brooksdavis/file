@@ -442,6 +442,8 @@ protected int file_is_tar(struct magic_set *, const unsigned char *, size_t);
 protected int file_softmagic(struct magic_set *, const unsigned char *, size_t,
     size_t, int, int);
 protected int file_apprentice(struct magic_set *, const char *, int);
+protected int buffer_apprentice(struct magic_set *, struct magic **,
+    size_t *, int);
 protected int file_magicfind(struct magic_set *, const char *, struct mlist *);
 protected uint64_t file_signextend(struct magic_set *, struct magic *,
     uint64_t);
